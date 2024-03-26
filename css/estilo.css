@@ -1,0 +1,597 @@
+* {
+	box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin:0;
+}
+h1,h2,h3, h4, h5, h6 {
+	margin: 0;	
+}
+
+    /* CSS DE PAGINA INICIAL Y PRINCIPAL */
+
+.boton-cerrar {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-family: inherit;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #4bb1b6;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.boton-cerrar:hover {
+    background-color: #ff9837;
+    transition: all 1s;
+}
+
+.buscar-inicio {
+    color: #f5f5b7;
+    font-weight: bold;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #FF9837;
+    box-shadow: #9FAE7D;
+    border-radius: 10px;
+    margin-top: 15px; 
+    position: relative;
+    right: 10px;
+}
+.buscar-inicio {
+    position: absolute;
+    top: 5px; 
+    left: 84%;   
+}
+.buscar {
+    color: #f5f5b7;
+    font-weight: bold;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #FF9837;
+    box-shadow: #9FAE7D;
+    border-radius: 10px;
+    margin-top: 90px; 
+    position: relative;
+}
+.buscar {
+    position: absolute;
+    top: 5px; 
+    left: 84%;
+}
+.m-r-1em
+    { margin-right:1em; }
+.m-b-1em
+    { margin-bottom:1em; }
+.m-1-1em
+    { margin-left:1em; }
+.mt0
+    { margin-top:0; }
+#titulo-inicio {
+    text-align: center;
+}
+#izquierda a[href="recetas_de_cocina/login/login.php"]  {
+    margin-left: -30px;
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-family: inherit;
+    margin-top: -10px;
+    padding: 7px 11px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background-color:#4bb1b6;
+    cursor: pointer;
+}
+#izquierda a:hover {
+    background-color: #ff9837;
+    transition: all 1s;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: 44%;
+}
+.paginacion li {
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.paginacion a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #FF9837;
+    color: #fff;
+    border-radius: 3px;
+}
+.avance-izq {
+    justify-content: flex-start;
+} 
+.paginacion li a:hover {
+    background-color: #FF9837;
+}
+.activa {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF9837;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boton-principal {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #FF9837; 
+    color: black; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    text-decoration: none;
+}
+.boton-principal:hover {
+    background-color: #9fae7d; 
+    transition: 0.3s ease; 
+}
+.boton-editar {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background-color: #9fae7d;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 2px;
+    margin-left: 25%;
+    width: 25%;
+}
+
+
+.boton-leer {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+	text-align: center;
+    background: #FF9837;
+	text-decoration: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-left: 25%;
+	width: 50%;
+}
+.boton-borrar {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ed3106;
+    color: white;
+	text-align: center;
+	text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-right: 2px;  
+	width: 25%;
+}
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+.contenedor--flex {
+	display:flex;
+    flex-wrap: wrap;
+	justify-content:center;
+	align-items:center;  
+}
+.columna {
+    width: 100%;    
+}
+img {
+	display: block;
+	width:100%;
+    max-width: 100%;
+}
+.img_celda{
+    margin: auto; 
+    max-width: 350px;
+}
+.receta {
+    width: 45%;
+    background: #F4F4F3;
+    color: rgb(37, 36, 36);
+    padding: 10px;
+    margin: auto;
+    border-top-width: 10px;
+    margin-top: 30px;
+}
+.receta--titulo{
+    text-align: center;
+}
+.receta--subtitulo{
+    text-align: left;
+    margin: auto;
+}
+#banner_img {
+   height: 50%;
+   object-fit:contain;
+}
+#banner {
+    background-color: #4bb1b6;
+    margin-top: 3%;
+}
+
+    /* CSS para iniciar sesion */
+
+form.inicio {
+    width: 300px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
+form.inicio label {
+    display: block; 
+    margin-bottom: 20px; 
+    font-weight: bold; 
+}
+form.inicio input[type="text"],
+form.inicio input[type="pass"] {
+    width: calc(100% - 18px); 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #4bb1b6;
+    border-radius: 5px; 
+    margin-right: 9px; 
+    margin-left: 9px; 
+}
+form.inicio input[type="submit"] {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #FF9837;
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+form.inicio .error-message {
+    color: red; 
+    margin-top: 5px; 
+}
+.inicio p {
+    text-align: center;
+}
+.inicio h2 {
+    text-align: center;
+}
+
+/* CSS DE PAGINA DE REGISTRO */
+
+div.registro {
+    width: 300px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
+#registro {
+    text-align: center;
+} 
+div.registro label {
+    display: block; 
+    margin-bottom: 20px; 
+    font-weight: bold;
+}  
+div.registro input[type="text"],
+div.registro input[type="password"] {
+    width: calc(100% - 18px); 
+    padding: 8px; 
+    margin-bottom: 10px;
+    border: 1px solid #4bb1b6; 
+    border-radius: 5px;
+    margin-right: 9px; 
+    margin-left: 9px; 
+}
+div.registro input[type="submit"] {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #FF9837; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+#iniciar {
+    background-color: #4bb1b6;
+} 
+  div.registro p {
+    text-align: center; 
+    color: red; 
+    margin-top: 5px; 
+}
+div.registro h2 {
+    text-align: center; 
+}
+
+  /* CSS PAGINA LEER INICIAL */
+
+.contenedor-leer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;   
+}
+.encabezado-pagina {
+    text-align: center;
+}
+.seccion {
+    margin-bottom: 20px;
+}
+.datos-receta {
+    padding: 10px;
+    margin-bottom: 20px;
+    white-space: pre-line;
+    border: 5px solid #4bb1b6;
+}   
+.datos-receta h2 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    background-color: #B3A27E;
+    text-align: center;
+}  
+.contenedor-datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+.elaboracion {
+    padding: 10px;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+.elaboracion h2 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    background-color: #B3A27E;
+    color: bold;
+}
+.pie {
+    text-align: center;
+}
+.boton-peligro {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-family: inherit;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background-color:#4bb1b6;
+    cursor: pointer;
+}
+.boton-peligro:hover {
+    background-color: #ff9837;
+    transition: all 1s;
+}
+
+  /* CSS de Crear receta */
+
+.contenedor-crear h1 {
+    text-align: center;
+    font-family: cursive;
+}
+.contenedor-crear form {
+    margin-right: 10%;
+}
+.contenedor-crear {
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #9fae7d;
+}
+.contenedor-crear form table {
+    width: 100%;
+}
+.contenedor-crear form table tr td {
+    padding: 10px 0;
+}
+.contenedor form table tr td:first-child {
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.contenedor-crear form table {
+    text-align: left;
+}
+.control-formulario {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 5px solid #FF9837;
+    background-color: #DFDAD9 ;
+}
+.control-formulario:focus {
+    outline: none;
+    border-color: #4bb1b6;
+}
+.boton-principal-crear {
+    padding: 10px 20px;
+    background-color: #FF9837;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left:25%;
+}
+.boton-peligro-crear{
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 24;
+}
+.titular{
+    display:block;
+    padding: 29px;
+    background:#9FAE7D;
+    color:#fff;
+    font-family: Verdana !important;
+    text-align: center;
+}
+#imagen-crear input[type="file"] {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #4bb1b6;
+    background-color: #DFDAD9;
+    color: #333; 
+    cursor: pointer; 
+}  
+#imagen-crear input[type="file"]:hover {
+    background-color: #FF9837;
+    color: #fff; 
+}   
+#imagen-crear input[type="file"]:focus {
+    outline: none;
+    border-color: #FF9837;
+}
+#tipo-crear select,
+#region-crear select {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #4bb1b6;
+    background-color: #DFDAD9;
+    color: #333; 
+}    
+#tipo-crear select:focus,
+#region-crear select:focus {
+    outline: none;
+    border-color: #FF9837;
+}  
+#tipo-crear select option,
+#region-crear select option {
+    background-color: #DFDAD9;
+    color: #333; 
+    border-radius: 5px;
+    padding: 5px;
+}
+#tipo-crear,
+#region-crear,
+#crear-usuario,
+#imagen-crear,
+#nombre-crear,
+#elaboracion-crear,
+#ingredientes-crear {
+    text-align: left;
+    font-weight: bold;
+}
+#tipo-crear select,
+#region-crear select {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #4bb1b6;
+    background-color: #DFDAD9;
+    color: #333; 
+}  
+#tipo-crear select:focus,
+#region-crear select:focus {
+    outline: none;
+    border-color: #FF9837;
+}    
+.exito {
+    text-align: center;
+    color: #3AE324;
+}
+.usuario-crear {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #4bb1b6;
+    background-color: #DFDAD9;
+}
+
+    /* CSS pagina actualizar */
+
+#imagen-editar input[type="file"] {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #4bb1b6;
+    background-color: #DFDAD9;
+    color: #333; 
+    cursor: pointer; 
+}  
+#imagen-editar input[type="file"]:hover {
+    background-color: #FF9837;
+    color: #fff; 
+}   
+#imagen-editar input[type="file"]:focus {
+    outline: none;
+    border-color: #FF9837;
+}
+#tipo-editar select,
+#region-editar select {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #4bb1b6;
+    background-color: #DFDAD9;
+    color: #333; 
+}    
+#tipo-editar select:focus,
+#region-editar select:focus {
+    outline: none;
+    border-color: #FF9837;
+}  
+#tipo-editar select option,
+#region-editar select option {
+    background-color: #DFDAD9;
+    color: #333; 
+    border-radius: 5px;
+    padding: 5px;
+}
+#tipo-editar,
+#region-editar,
+#imagen-editar {
+    text-align: left;
+    font-weight: bold;
+}
+#tipo-editar select,
+#region-editar select {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #4bb1b6;
+    background-color: #DFDAD9;
+    color: #333; 
+}
+#tipo-editar select:focus,
+#region-editar select:focus {
+    outline: none;
+    border-color: #FF9837;
+}   
+    
